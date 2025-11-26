@@ -14,11 +14,12 @@ header {
 }
 
 nav {
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
     margin: auto;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav a {
