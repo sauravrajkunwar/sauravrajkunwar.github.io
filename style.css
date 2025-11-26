@@ -5,7 +5,8 @@
 body {
     margin: 0;
     font-family: 'Forum', serif;
-    line-height: 1.7;
+    font-size: 19px;                 /* Increased base font size */
+    line-height: 1.75;
     letter-spacing: 0.3px;
     color: #222;
     background: linear-gradient(180deg, #f9f9fb, #eef1f7);
@@ -23,7 +24,7 @@ body.loaded {
 
 .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1300px;   /* Wider layout */
     margin: 40px auto;
 }
 
@@ -43,10 +44,10 @@ body.loaded {
 .card {
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(6px);
-    padding: 25px;
+    padding: 30px;      /* Slight increase */
     border-radius: 12px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 /* HEADINGS -------------------------------------------------- */
@@ -57,20 +58,30 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-/* Accent underline under page titles */
 h1 {
+    font-size: 38px;     /* Increased */
+    margin-bottom: 20px;
     position: relative;
-    margin-bottom: 18px;
 }
 
 h1::after {
     content: "";
-    width: 60px;
+    width: 70px;
     height: 3px;
     background: #FF552E;
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     left: 0;
+}
+
+h2 {
+    font-size: 30px;     /* Increased */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;     /* Increased */
+    margin-bottom: 10px;
 }
 
 /* HEADER + NAV -------------------------------------------------- */
@@ -78,7 +89,7 @@ h1::after {
 header {
     background-color: rgba(19, 41, 75, 0.75);
     backdrop-filter: blur(10px);
-    padding: 10px 0;
+    padding: 12px 0;
     width: 100%;
     position: sticky;
     top: 0;
@@ -88,14 +99,14 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;      /* Slightly increased */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 18px;
-    font-size: 1.15rem;
+    font-size: 20px;     /* Increased */
     font-weight: 500;
     position: relative;
     transition: color 0.25s ease;
@@ -126,11 +137,11 @@ nav a:hover::after {
 .intro {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 
 .headshot {
-    width: 350px;
+    width: 380px;   /* Slightly larger */
     border-radius: 8px;
     height: auto;
 }
@@ -138,20 +149,20 @@ nav a:hover::after {
 /* PUBLICATIONS -------------------------------------------------- */
 
 .publications p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* RESEARCH PAGE -------------------------------------------------- */
 
 .research-row {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .research-image {
-    max-width: 350px;
+    max-width: 400px; /* Bigger images */
 }
 
 /* Hover lift for research images */
@@ -170,14 +181,14 @@ nav a:hover::after {
 
 .adventure-row {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .adventure-item {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
     text-align: center;
 }
 
@@ -200,8 +211,8 @@ footer {
     background-color: #13294B;
     color: #d1d1d1;
     text-align: center;
-    padding: 25px 0;
-    margin-top: 60px;
+    padding: 30px 0;   /* More padding */
+    margin-top: 70px;
 }
 
 footer a {
@@ -217,13 +228,17 @@ footer a:hover {
 
 @media (max-width: 600px) {
 
+    body {
+        font-size: 17px; /* Slight adjustment for mobile */
+    }
+
     nav {
         flex-wrap: wrap;
         gap: 12px;
     }
 
     nav a {
-        font-size: 1rem;
+        font-size: 18px;
         padding: 8px 10px;
     }
 
@@ -235,13 +250,10 @@ footer a:hover {
 
     .headshot {
         width: 100%;
-        max-width: 270px;
+        max-width: 300px;
     }
 
-    .research-row {
-        flex-direction: column;
-    }
-
+    .research-row,
     .adventure-row {
         flex-direction: column;
     }
@@ -253,13 +265,14 @@ footer a:hover {
 .dark-toggle {
     background: none;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Slightly larger */
     cursor: pointer;
     color: white;
     margin-left: 15px;
     transition: transform 0.25s ease;
 }
 
+/* Hover effect */
 .dark-toggle:hover {
     transform: scale(1.2);
 }
@@ -267,7 +280,7 @@ footer a:hover {
 /* Core dark mode styles */
 body.dark-mode {
     background: linear-gradient(180deg, #0f1116, #1c1f26);
-    color: #e5e5e5;
+    color: #e9e9e9;
 }
 
 /* Headings */
@@ -279,18 +292,14 @@ body.dark-mode h3 {
 
 /* Cards */
 body.dark-mode .card {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(8px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
 }
 
 /* Navigation */
 body.dark-mode nav a {
-    color: #dddddd;
-}
-
-body.dark-mode nav a:hover {
-    color: #FF552E;
+    color: #e0e0e0;
 }
 
 /* Footer */
@@ -299,17 +308,9 @@ body.dark-mode footer {
     color: #cccccc;
 }
 
-body.dark-mode footer a {
-    color: #cccccc;
-}
-
-body.dark-mode footer a:hover {
-    color: #FF552E;
-}
-
-/* Body links in dark mode */
+/* SUPER-visible links in dark mode */
 body.dark-mode a {
-    color: #8ab4f8;
+    color: #5ea1ff; /* Illinois-style vivid blue */
 }
 
 body.dark-mode a:hover {
@@ -324,10 +325,10 @@ body.dark-mode .adventure-img {
 
 body.dark-mode .research-image img:hover,
 body.dark-mode .adventure-img:hover {
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
 }
 
-/* Floating dark mode toggle button */
+/* Floating dark mode toggle */
 .floating-toggle {
     position: fixed;
     top: 15px;
@@ -336,5 +337,5 @@ body.dark-mode .adventure-img:hover {
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(6px);
     border-radius: 50%;
-    padding: 10px 12px;
+    padding: 12px 14px; /* Slightly larger */
 }
