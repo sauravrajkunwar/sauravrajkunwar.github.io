@@ -66,3 +66,8 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+.pdf-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
