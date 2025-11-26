@@ -71,3 +71,20 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.research-item {
+    margin-bottom: 50px;
+}
+
+.research-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
