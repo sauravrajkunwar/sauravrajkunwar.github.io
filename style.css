@@ -25,6 +25,8 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
+    font-size: 1.1rem; /* increase link size */
+    padding: 6px 12px; /* optional: more clickable area */
 }
 
 .container {
