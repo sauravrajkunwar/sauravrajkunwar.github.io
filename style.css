@@ -102,8 +102,13 @@ footer a:hover {
 }
 
 .research-image {
-    width: 20px;
-    max-width: 100%;
+    width: auto;
+    max-width: 280px; /* adjust size here */
+}
+
+.research-image img {
+    width: 100%;
+    height: auto;
     border-radius: 6px;
 }
 
