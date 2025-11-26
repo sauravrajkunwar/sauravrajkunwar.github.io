@@ -77,8 +77,8 @@ footer {
 }
 
 .research-img {
-    width: 50%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 450px;
     border-radius: 6px;
     margin-bottom: 20px;
 }
