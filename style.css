@@ -1,17 +1,17 @@
 /* GLOBAL -------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+    font-family: 'Forum', serif;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
     color: #222;
     background: linear-gradient(180deg, #f9f9fb, #eef1f7);
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    letter-spacing: 0.2px;
 
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -135,7 +135,8 @@ nav a:hover::after {
     height: auto;
 }
 
-/* PUBLICATIONS */
+/* PUBLICATIONS -------------------------------------------------- */
+
 .publications p {
     margin-bottom: 15px;
 }
@@ -306,7 +307,7 @@ body.dark-mode footer a:hover {
     color: #FF552E;
 }
 
-/* Research & Adventure images retain hover effects but appear darker */
+/* Research & Adventure images in dark mode */
 body.dark-mode .research-image img,
 body.dark-mode .adventure-img {
     box-shadow: none;
@@ -317,6 +318,7 @@ body.dark-mode .adventure-img:hover {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
 }
 
+/* Floating dark mode toggle button */
 .floating-toggle {
     position: fixed;
     top: 15px;
@@ -327,5 +329,3 @@ body.dark-mode .adventure-img:hover {
     border-radius: 50%;
     padding: 10px 12px;
 }
-
-
