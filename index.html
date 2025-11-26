@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saurav Raj Kunwar</title>
-    <link rel="stylesheet" href="style2.css">
+
+    <!-- Google Font already imported inside CSS, but okay to load twice -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -18,59 +22,64 @@
 </header>
 
 <main class="container">
-    <section class="intro">
-        <img src="pictures/saurav_headshot.png" alt="Saurav Raj Kunwar headshot" class="headshot">
 
-        <div class="intro-text">
-            <h1>Nice to Meet You</h1>
+    <!-- Intro Section -->
+    <div class="card fade-slide">
+        <section class="intro">
+            <img src="pictures/saurav_headshot.jpg" alt="Saurav Raj Kunwar headshot" class="headshot">
 
-            <p>
-                I'm Saurav Raj Kunwar, a PhD candidate in Agricultural and Applied Economics at the
-                University of Illinois at Urbana-Champaign. My research focuses on the economics of
-                agriculture, climate change, and environmental sustainability.
-            </p>
+            <div class="intro-text">
+                <h1>Nice to Meet You</h1>
 
-            <p>
-                I began my academic journey with a Bachelor of Science in Agriculture from Tribhuvan
-                University, followed by a Master of Science in Agricultural and Applied Economics from
-                the University of Georgia. Currently, I am pursuing my PhD at the University of Illinois
-                Urbana Champaign.
-            </p>
+                <p>
+                    I'm Saurav Raj Kunwar, a PhD candidate in Agricultural and Applied Economics at the
+                    University of Illinois at Urbana-Champaign. My research focuses on the economics of
+                    agriculture, climate change, and environmental sustainability.
+                </p>
 
-            <p>
-                I study the value of environmental services from agricultural production, focusing on the
-                balance between food security and environmental sustainability. My work quantifies the
-                benefits of sustainable practices on soil health, carbon storage, and biodiversity, addressing
-                the trade-offs between crop output and environmental outcomes.
-            </p>
+                <p>
+                    I began my academic journey with a Bachelor of Science in Agriculture from Tribhuvan
+                    University, followed by a Master of Science in Agricultural and Applied Economics from
+                    the University of Georgia. Currently, I am pursuing my PhD at the University of Illinois
+                    Urbana-Champaign.
+                </p>
 
-            <p>
-                Using production economics, I estimate shadow prices for environmental services and
-                evaluate economic incentives that support sustainable agricultural practices.
-            </p>
-        </div>
-    </section>
+                <p>
+                    I study the value of environmental services from agricultural production, focusing on
+                    the balance between food security and environmental sustainability. My work quantifies
+                    the benefits of sustainable practices on soil health, carbon storage, and biodiversity,
+                    addressing the trade-offs between crop output and environmental outcomes.
+                </p>
 
-    <section class="publications">
+                <p>
+                    Using production economics, I estimate shadow prices for environmental services and
+                    evaluate incentives that support sustainable agricultural practices.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Publications -->
+    <section class="publications fade-slide">
         <h2>Recent Publications</h2>
 
-<p>
-    Kunwar, S. R., Chambers, R. G., Gentry, L., and Serra, T. (2025). 
-    <a href="https://doi.org/10.1111/ajae.70005" target="_blank">
-        What are the Carbon Services from Cover-Crop Adoption Worth from Farmers’ Perspective?
-    </a>
-    American Journal of Agricultural Economics.
-</p>
+        <p>
+            Kunwar, S. R., Chambers, R. G., Gentry, L., and Serra, T. (2025). 
+            <a href="https://doi.org/10.1111/ajae.70005" target="_blank">
+                What are the Carbon Services from Cover-Crop Adoption Worth from Farmers’ Perspective?
+            </a>
+            American Journal of Agricultural Economics.
+        </p>
 
-<p>
-    Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., and Wang, S. (2025). 
-    <a href="https://doi.org/10.1146/annurev-resource-121523-015001" target="_blank">
-        Estimating Production and Environmental Efficiency under Uncertainty
-    </a>. 
-    Annual Review of Resource Economics, 17.
-</p>
+        <p>
+            Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., and Wang, S. (2025). 
+            <a href="https://doi.org/10.1146/annurev-resource-121523-015001" target="_blank">
+                Estimating Production and Environmental Efficiency under Uncertainty
+            </a>.
+            Annual Review of Resource Economics, 17.
+        </p>
+    </section>
 
-        </section>
 </main>
 
 <footer>
@@ -78,11 +87,13 @@
         <a href="mailto:skunwar2@illinois.edu">skunwar2@illinois.edu</a> • 
         (929) 332-1743 • 
         <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-    <p>
+    </p>
     <p>
         © 2025 Saurav Raj Kunwar
-    <p>
+    </p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
