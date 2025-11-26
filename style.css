@@ -307,6 +307,15 @@ body.dark-mode footer a:hover {
     color: #FF552E;
 }
 
+/* Body links in dark mode */
+body.dark-mode a {
+    color: #8ab4f8;
+}
+
+body.dark-mode a:hover {
+    color: #FF552E;
+}
+
 /* Research & Adventure images in dark mode */
 body.dark-mode .research-image img,
 body.dark-mode .adventure-img {
