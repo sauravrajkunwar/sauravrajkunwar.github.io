@@ -88,3 +88,19 @@ footer {
     font-size: 1rem;
 }
 
+.adventures {
+    margin-top: 40px;
+}
+
+.adventure-item {
+    margin-bottom: 30px;
+}
+
+.adventure-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
