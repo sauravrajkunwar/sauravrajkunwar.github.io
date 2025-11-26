@@ -245,3 +245,75 @@ footer a:hover {
         flex-direction: column;
     }
 }
+
+/* DARK MODE -------------------------------------------------- */
+
+/* Toggle button styling */
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    margin-left: 15px;
+    transition: transform 0.25s ease;
+}
+
+.dark-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* Core dark mode styles */
+body.dark-mode {
+    background: linear-gradient(180deg, #0f1116, #1c1f26);
+    color: #e5e5e5;
+}
+
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffffff;
+}
+
+/* Cards */
+body.dark-mode .card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Navigation */
+body.dark-mode nav a {
+    color: #dddddd;
+}
+
+body.dark-mode nav a:hover {
+    color: #FF552E;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #0f1116;
+    color: #cccccc;
+}
+
+body.dark-mode footer a {
+    color: #cccccc;
+}
+
+body.dark-mode footer a:hover {
+    color: #FF552E;
+}
+
+/* Research & Adventure images retain hover effects but appear darker */
+body.dark-mode .research-image img,
+body.dark-mode .adventure-img {
+    box-shadow: none;
+}
+
+body.dark-mode .research-image img:hover,
+body.dark-mode .adventure-img:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
+}
+
