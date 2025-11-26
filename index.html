@@ -3,269 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saurav Raj Kunwar - Academic Portfolio</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font for a clean, academic look */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
-        }
-        /* Subtle custom color (academic blue) for branding */
-        .brand-bg {
-            background-color: #1e3a8a; /* Deep blue */
-        }
-        .brand-text {
-            color: #1e3a8a;
-        }
-        .brand-border {
-            border-color: #1e3a8a;
-        }
-        .nav-active {
-            font-weight: 700;
-            opacity: 1;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-        }
-        /* Add a small transition for the page content */
-        .page-content {
-            opacity: 1;
-            transition: opacity 0.3s ease-in-out;
-            border-bottom: 4px solid transparent; /* Default transparent border */
-        }
-        /* Active page receives the branded border color */
-        .page-content:not(.hidden) {
-            border-color: #1e3a8a; 
-        }
-    </style>
+    <title>Saurav Raj Kunwar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="min-h-screen">
+<body>
 
-    <!-- Navbar / Site Header -->
-    <header class="brand-bg text-white shadow-lg">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
-            <h1 class="text-2xl font-bold tracking-tight">SAURAV RAJ KUNWAR</h1>
-            <nav class="hidden md:flex space-x-6">
-                <!-- Updated Nav Links with JS Handlers -->
-                <a href="javascript:void(0)" id="nav-home" onclick="showPage('home-content', this)" class="hover:underline opacity-80 nav-active">Home</a>
-                <a href="javascript:void(0)" id="nav-resume" onclick="showPage('resume-content', this)" class="hover:underline opacity-80">Resume</a>
-                <a href="javascript:void(0)" id="nav-research" onclick="showPage('research-content', this)" class="hover:underline opacity-80">Research & Projects</a>
-                <a href="javascript:void(0)" id="nav-about" onclick="showPage('about-content', this)" class="hover:underline opacity-80">About Me</a>
-            </nav>
-        </div>
-    </header>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="research.html">Research & Projects</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
-    <!-- Main Content Area - All pages live here, but only one is visible at a time -->
-    <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+<main class="container">
+    <section class="intro">
+        <img src="pictures/headshot.jpg" alt="Saurav Raj Kunwar headshot" class="headshot">
 
-        <!-- HOME PAGE CONTENT (Visible by default) - NOW HAS YOUR ACTUAL CONTENT -->
-        <div id="home-content" class="page-content">
-            <!-- Section 1: Introduction & Professional Identity -->
-            <div class="bg-white p-8 rounded-lg shadow-xl mb-8 border-t-4 brand-border">
-                <!-- Placeholder for Professional Headshot -->
-                <div class="flex items-center mb-6">
-                    <img src="https://placehold.co/120x120/1e3a8a/ffffff?text=SRK" alt="Professional Headshot Placeholder" class="rounded-full mr-6 border-4 brand-border shadow-md">
-                    <div>
-                        <h2 class="text-3xl font-extrabold brand-text">Nice to Meet You</h2>
-                        <p class="text-xl text-gray-600 mt-1">PhD Candidate, Agricultural and Applied Economics</p>
-                        <p class="text-lg text-gray-500">University of Illinois at Urbana-Champaign (UIUC)</p>
-                    </div>
-                </div>
+        <div class="intro-text">
+            <h1>Nice to Meet You</h1>
 
-                <!-- YOUR INTRODUCTION TEXT -->
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    I'm Saurav Raj Kunwar, a PhD candidate in Agricultural and Applied Economics at the University of Illinois at Urbana-Champaign. My research focuses on the economics of agriculture, climate change, and environmental sustainability.
-                </p>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    I began my academic journey with a Bachelor of Science in Agriculture from Tribhuvan University, followed by a Master of Science in Agricultural and Applied Economics from the University of Georgia. Currently, I am pursuing my PhD at the University of Illinois Urbana Champaign.
-                </p>
+            <p>
+                I'm Saurav Raj Kunwar, a PhD candidate in Agricultural and Applied Economics at the
+                University of Illinois at Urbana-Champaign. My research focuses on the economics of
+                agriculture, climate change, and environmental sustainability.
+            </p>
 
-                <!-- CALL TO ACTION (CTA) -->
-                <p class="mt-4 p-3 bg-indigo-50 border-l-4 border-indigo-500 text-indigo-800 text-sm italic rounded-r">
-                    <span class="font-semibold">Current Goal:</span> I am actively seeking research collaborations and postdoctoral opportunities related to climate modeling, agricultural policy, and applied econometrics for Fall 2025.
-                </p>
-            </div>
+            <p>
+                I began my academic journey with a Bachelor of Science in Agriculture from Tribhuvan
+                University, followed by a Master of Science in Agricultural and Applied Economics from
+                the University of Georgia. Currently, I am pursuing my PhD at the University of Illinois
+                Urbana Champaign.
+            </p>
 
-            <!-- Section 2: Research and Publications -->
-            <div class="bg-white p-8 rounded-lg shadow-xl mb-8">
-                <h3 class="text-2xl font-bold mb-4 brand-text">Key Research Focus</h3>
+            <p>
+                I study the value of environmental services from agricultural production, focusing on the
+                balance between food security and environmental sustainability. My work quantifies the
+                benefits of sustainable practices on soil health, carbon storage, and biodiversity, addressing
+                the trade-offs between crop output and environmental outcomes.
+            </p>
 
-                <!-- YOUR RESEARCH FOCUS TEXT -->
-                <p class="text-gray-700 leading-relaxed mb-6">
-                    I study the value of environmental services from agricultural production, focusing on the balance between food security and environmental sustainability. My research quantifies the benefits of sustainable agricultural practices on soil health, carbon storage, and biodiversity, addressing the complex trade-offs between crop production and environmental outcomes. By applying principles from production economics, I calculate the shadow prices of environmental services and evaluate the economic incentives necessary for adopting sustainable agricultural practices.
-                </p>
-
-                <h3 class="text-2xl font-bold mb-4 brand-text">Recent Publications</h3>
-                <ul class="space-y-3 text-gray-700">
-                    <li>
-                        <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium hover:underline">
-                            1. Kunwar, S. R., Chambers, R. G., Gentry, L., & Serra, T. (2025). What are the Carbon Services from Cover-Crop Adoption Worth from Farmers’ Perspective? <span class="italic">American Journal of Agricultural Economics (Forthcoming).</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium hover:underline">
-                            2. Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., & Wang, S. (2025). Estimating Production and Environmental Efficiency under Uncertainty. <span class="italic">Annual Review of Resource Economics, 17 (Forthcoming).</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Section 3: Contact and Academic Identifiers -->
-            <div class="bg-white p-6 rounded-lg shadow-xl mb-8">
-                <h3 class="text-2xl font-bold mb-4 brand-text">Contact & Profiles</h3>
-                <div class="flex flex-wrap gap-6 items-center text-gray-700">
-
-                    <!-- Standard Contact -->
-                    <div class="flex items-center space-x-2">
-                        <!-- Email -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 brand-text" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-                        <span>skunwar2@illinois.edu</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <!-- Phone -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 brand-text" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.744 4.466a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.466.744a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-                        <span>(929) 332-1743</span>
-                    </div>
-
-                    <!-- Academic Identifiers -->
-                    <a href="http://linkedin.com/in/saurav-raj-kunwar" target="_blank" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.529-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="#" target="_blank" class="flex items-center space-x-2 text-green-600 hover:text-green-800 hover:underline">
-                        <!-- Google Scholar Icon (simple books) -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21 17h-2v-4h2v4zm-4 0h-2v-6h2v6zm-4 0h-2v-8h2v8zm-4 0H7v-2H5v2H3v-2H1v2h2v2h2v-2h2v2h2v-2h2v2zm12-9h-2v-2h2v2zM15 8h-2V6h2v2zM11 8H9V6h2v2zM5 13H3v-2H1v2h2v2h2v-2zM9 13H7v-2H5v2h2v2h2v-2z"/></svg>
-                        <span>Google Scholar</span>
-                    </a>
-                    <a href="#" target="_blank" class="flex items-center space-x-2 text-purple-600 hover:text-purple-800 hover:underline">
-                        <!-- ORCID Icon (simple circle/lines) -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-5 18H5V6h2v12zm5 0h-2V6h2v12zm5 0h-2V6h2v12z"/></svg>
-                        <span>ORCID iD</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- RESUME PAGE CONTENT (PDF Download Link) - READY TO GO -->
-        <div id="resume-content" class="page-content hidden bg-white p-8 rounded-lg shadow-xl mb-8 border-t-4 brand-border flex flex-col items-center text-center">
-            <h2 class="text-3xl font-extrabold mb-6 brand-text">Download Professional Résumé (PDF)</h2>
-            <div class="max-w-md w-full p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-inner mb-8">
-                <p class="text-gray-700 mb-6">
-                    For a comprehensive overview of my education, experience, and publications, please download the official PDF version of my curriculum vitae.
-                </p>
-                <a 
-                    id="download-link"
-                    href="./Saurav_Raj_Kunwar_Resume.pdf" 
-                    download 
-                    class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-white brand-bg hover:bg-blue-800 transition duration-300 transform hover:scale-[1.02]"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 11.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v7a1 1 0 11-2 0V3a1 1 0 011-1z" clip-rule="evenodd"/></svg>
-                    Download CV/Resume PDF
-                </a>
-            </div>
-            <p class="text-sm text-gray-500 mt-4">
-                <span class="font-semibold text-red-600">Action Required:</span> After uploading this code to GitHub, please upload your actual resume file (e.g., named <code class="font-mono text-xs">Saurav_Raj_Kunwar_Resume.pdf</code>) to the root folder of your repository for the link above to work.
+            <p>
+                Using production economics, I estimate shadow prices for environmental services and
+                evaluate economic incentives that support sustainable agricultural practices.
             </p>
         </div>
+    </section>
 
-        <!-- RESEARCH & PROJECTS PAGE CONTENT (Placeholder) - NEEDS YOUR TEXT -->
-        <div id="research-content" class="page-content hidden bg-white p-8 rounded-lg shadow-xl mb-8 border-t-4 brand-border">
-            <h2 class="text-3xl font-extrabold mb-6 brand-text">Research & Projects</h2>
-            <p class="text-gray-700 leading-relaxed mb-8">
-                [PLACEHOLDER] My research agenda sits at the intersection of farm-level decision-making and large-scale environmental outcomes. I leverage computational methods and microeconomic theory to provide data-driven insights for agricultural policy.
-            </p>
-            <section class="mb-8">
-                <h3 class="text-xl font-bold mb-3 border-b pb-1">Dissertation: Valuing Environmental Stewardship in Agriculture</h3>
-                <div class="mb-4 bg-gray-50 p-4 rounded-md">
-                    <p class="font-semibold text-lg">Chapter 1: The Shadow Price of Carbon Services in the Midwest</p>
-                    <p class="text-gray-700">
-                        [PLACEHOLDER] Quantifies the implicit cost and benefit of carbon sequestration for farmers adopting conservation tillage and cover crops, using a generalized distance function approach. <br>
-                        <span class="text-sm italic text-blue-500">Status: Submitted to Journal of Environmental Economics and Management.</span>
-                    </p>
-                </div>
-            </section>
-        </div>
+    <section class="publications">
+        <h2>Recent Publications</h2>
 
-        <!-- ABOUT ME PAGE CONTENT (Has your content) - READY TO GO -->
-        <div id="about-content" class="page-content hidden bg-white p-8 rounded-lg shadow-xl mb-8 border-t-4 brand-border">
-            <h2 class="text-3xl font-extrabold mb-6 brand-text">About Me: My Journey and Adventures</h2>
-            <section class="mb-8">
-                <h3 class="text-xl font-bold mb-3 brand-text border-b pb-1">Adventures & Living Life to the Fullest</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    I believe in living life to the fullest by embracing every adventure that comes my way. From skydiving in Pennsylvania to bungee jumping in Nepal, each experience has been exhilarating and unforgettable.
-                </p>
-                <ul class="list-disc ml-6 text-gray-700">
-                    <li>Skydiving in Pocono, Pennsylvania (2019)</li>
-                    <li>Bungee Jumping in Kushma, Nepal (2021)</li>
-                    <li>Rafting in Kali Gandaki River, Nepal (2021)</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="text-xl font-bold mb-3 brand-text border-b pb-1">My Journey from Nepal to the USA (Q&A Style Summary)</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Born and raised in Nepal and coming to the USA for higher education, I often get asked some interesting questions about my experiences, challenges, and surprises. Below is a glimpse of my adventure from Nepal to the United States—a journey fueled by my quest for higher education and new experiences.
-                </p>
-                <h4 class="font-semibold mt-4 text-lg">The Decision to Move and Settling In</h4>
-                <p class="text-gray-700 leading-relaxed mb-3">
-                    Motivated by the promise of quality education, I began a journey to the USA, excited to explore a new part of the world. Leaving my parents behind was tough, but the thrill of a new beginning made the farewell a bit easier. Landing in New York with family waiting for me made the transition smoother than I had anticipated. I then moved to Georgia for my master's program, where the warmth of the UGA Nepali community and my advisor's support made me feel right at home. Despite the initial cultural shocks, like the casual greetings and the rarity of vegetarian options, I quickly found my footing.
-                </p>
-            </section>
-        </div>
+        <p>
+            Kunwar, S. R., Chambers, R. G., Gentry, L., and Serra, T. (2025). What are the Carbon Services
+            from Cover-Crop Adoption Worth from Farmers’ Perspective? American Journal of Agricultural
+            Economics.
+        </p>
 
-    </main>
+        <p>
+            Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., and Wang, S. (2025). Estimating Production
+            and Environmental Efficiency under Uncertainty. Annual Review of Resource Economics, 17.
+        </p>
+    </section>
+</main>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 text-gray-500 text-sm border-t mt-8">
-        <p>Preview Layout | Designed for clarity and professionalism.</p>
-    </footer>
-
-    <script>
-        // Get all page content containers
-        const pages = document.querySelectorAll('.page-content');
-        // Get all navigation links
-        const navLinks = document.querySelectorAll('nav a');
-        
-        // Function to show the selected page and update active navigation state
-        function showPage(pageId, activeElement) {
-            // Hide all pages
-            pages.forEach(page => {
-                page.classList.add('hidden');
-                page.classList.remove('page-active-border'); // Clean up active border class
-            });
-
-            // Show the selected page
-            const activePage = document.getElementById(pageId);
-            if (activePage) {
-                activePage.classList.remove('hidden');
-                activePage.classList.add('page-active-border'); // Add active border class
-                window.scrollTo(0, 0); // Scroll to top on page switch
-            }
-
-            // Remove active class from all nav links
-            navLinks.forEach(link => {
-                link.classList.remove('nav-active');
-            });
-
-            // Add active class to the clicked link
-            if (activeElement) {
-                activeElement.classList.add('nav-active');
-            }
-        }
-        
-        // Initialization: Ensure 'home-content' is visible and set as active on load
-        document.addEventListener('DOMContentLoaded', () => {
-            const initialPage = document.getElementById('home-content');
-            const initialNav = document.getElementById('nav-home');
-            
-            if (initialPage) {
-                initialPage.classList.remove('hidden');
-                initialPage.classList.add('nav-active'); // Ensure Home nav link is active on load
-            }
-        });
-
-    </script>
+<footer>
+    <p>© 2025 Saurav Raj Kunwar</p>
+</footer>
 
 </body>
 </html>
