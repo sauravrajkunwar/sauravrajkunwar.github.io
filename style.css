@@ -90,11 +90,27 @@ footer a:hover {
     margin-bottom: 50px;
 }
 
-.research-img {
-    width: 100%;
-    max-width: 450px;
+.research-row {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.research-image img {
+    width: 280px;
+    max-width: 100%;
     border-radius: 6px;
-    margin-bottom: 20px;
+}
+
+.research-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.research-text p {
+    margin-top: 10px;
 }
 
 .contact-info {
