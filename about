@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Saurav Raj Kunwar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="research.html">Research & Projects</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h1>About Me</h1>
+
+    <section class="about-section">
+        <p>
+            I believe in living life to the fullest by embracing every adventure that comes my way. 
+            From skydiving in Pennsylvania to bungee jumping in Nepal, each experience has been 
+            exhilarating and unforgettable.
+        </p>
+    </section>
+
+    <section class="adventures">
+        <h2>A Few Snapshots of My Adventures</h2>
+
+        <div class="adventure-item">
+            <img src="pictures/skydiving.jpg" alt="Skydiving in Pennsylvania" class="adventure-img">
+            <p>Skydiving in Pocono, Pennsylvania (2019)</p>
+        </div>
+
+        <div class="adventure-item">
+            <img src="pictures/bungee.jpg" alt="Bungee Jumping in Kushma Nepal" class="adventure-img">
+            <p>Bungee Jumping in Kushma, Nepal (2021)</p>
+        </div>
+
+        <div class="adventure-item">
+            <img src="pictures/rafting.jpg" alt="Rafting in Kali Gandaki River Nepal" class="adventure-img">
+            <p>Rafting in Kali Gandaki River, Nepal (2021)</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>My Journey from Nepal to the USA</h2>
+
+        <p>
+            Born and raised in Nepal and coming to the USA for higher education, I often get asked some 
+            interesting questions about my experiences, challenges, and surprises. Here’s a small look 
+            at that journey, framed as answers to the questions I hear most often.
+        </p>
+
+        <h3>The Decision to Move</h3>
+        <p>
+            Motivated by the promise of quality education, I began a journey to the USA, excited to 
+            explore a new part of the world. Leaving my parents behind was tough, but the thrill of a 
+            new beginning made the farewell easier.
+        </p>
+
+        <h3>Settling In</h3>
+        <p>
+            Landing in New York with family waiting for me made the transition smoother than expected. 
+            Later, I moved to Georgia for my master's program, where the UGA Nepali community and my 
+            advisor’s support helped me settle quickly. Cultural shocks were real—the casual greetings 
+            and the lack of vegetarian food—but I adapted fast.
+        </p>
+
+        <h3>First Impressions</h3>
+        <p>
+            My first impression of the USA was of a country that never sleeps. I imagined skyscrapers 
+            everywhere, only to learn that this was true mainly for major cities.
+        </p>
+
+        <h3>Funny Experiences</h3>
+        <p>
+            I once tried to go to the UGA health center using Google Maps and the campus transit system. 
+            After an hour on the bus, I ended up right across the street from where I had started—and 
+            only then found the health center.
+        </p>
+
+        <h3>Life in the USA</h3>
+        <p>
+            Over the years, the love and respect I’ve received have made my life here smooth and memorable. 
+            I adapted well, but I still miss the momo and mountains of Nepal. Sometimes I pretend clouds 
+            on the horizon are mountains just to bring a bit of home into my day.
+        </p>
+
+        <h3>Advice for Others</h3>
+        <p>
+            To anyone from Nepal thinking about a similar journey: Love and respect the people around you. 
+            It returns to you, and it makes the adventure worth it.
+        </p>
+    </section>
+
+    <section class="contact-info">
+        <p>Email: <a href="mailto:skunwar2@illinois.edu">skunwar2@illinois.edu</a></p>
+        <p>Phone: (929) 332-1743</p>
+        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Saurav Raj Kunwar</p>
+</footer>
+
+</body>
+</html>
 
