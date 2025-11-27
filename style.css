@@ -107,7 +107,7 @@ nav a {
     text-decoration: none;
     padding: 10px 18px;
     font-size: 28px;     /* Increased */
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     transition: color 0.25s ease;
 }
