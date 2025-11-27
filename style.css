@@ -59,7 +59,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 38px;     /* Increased */
+    font-size: 32px;     /* Increased */
     margin-bottom: 20px;
     position: relative;
 }
@@ -75,12 +75,12 @@ h1::after {
 }
 
 h2 {
-    font-size: 30px;     /* Increased */
+    font-size: 28px;     /* Increased */
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 28px;     /* Increased */
+    font-size: 25px;     /* Increased */
     margin-bottom: 10px;
 }
 
