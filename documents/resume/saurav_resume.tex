@@ -1,0 +1,98 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\setlist[itemize,enumerate]{noitemsep, topsep=0pt, parsep=1pt, partopsep=1pt}
+\usepackage{etaremune}
+\usepackage{geometry}
+\usepackage{fontawesome5}
+\usepackage{datetime}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=mycolor]{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+% Adjust margins
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+% Font and color settings
+\definecolor{mycolor}{RGB}{0, 50, 100}
+%\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\myname}{Saurav Raj Kunwar}
+\newcommand{\myemail}{skunwar2@illinois.edu}
+\newcommand{\myphonenumber}{(929) 332-1743}
+
+% Header
+\newcommand{\header}{
+    \begin{center}
+        {\Large \textbf{\myname}}\\
+        \vspace{5pt}
+        \href{mailto:youremail@example.com}{\textcolor{mycolor}{\myemail}} $\vert$
+        %\faPhone \ 
+        \textcolor{mycolor}{\myphonenumber} \\
+        \textcolor{mycolor}{336 Mumford Hall, Urbana, IL. 61801}\\
+        \textcolor{mycolor}{Updated: \monthname[\month] \the\year}
+    \end{center}
+    \vspace{5pt}
+}
+
+
+% Section titles
+\newcommand{\sectiontitle}[1]{
+    \vspace{10pt}
+    \noindent{\textbf{\textsc{\textcolor{mycolor}{\MakeUppercase{#1}}}}}
+    \vspace{3pt}
+    \hrule height 1pt
+    \vspace{5pt}
+}
+
+\begin{document}
+
+\header
+
+% \input{objective}
+
+% Education Section
+\input{education}
+
+% Academic Position
+\input{academic_positions}
+
+\input{research_interests}
+
+\input{recent_peer_reviewed_articles}
+
+\input{extension_publication}
+
+\input{skills}
+
+% Working Papers
+\input{working_papers}
+
+% Works in Progress
+\input{work_in_progress}
+
+\input{teaching_experience}
+
+\input{mentoring}
+
+\input{teaching_development}
+
+\input{awards_fellowships}
+
+% Academic Services
+\input{academic_services}
+
+% Leaderships
+\input{leaderships}
+
+% Academic Presentations
+\input{academic_presentations}
+
+\newpage
+% References Section
+% \input{references}
+
+\end{document}
+
+
