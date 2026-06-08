@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saurav Raj Kunwar</title>
 
-    <!-- Google Font already imported inside CSS, but okay to load twice -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +13,7 @@
 <header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="resume.html">Résumé</a>
+        <a href="resume.html">Resume</a>
         <a href="research.html">Research & Projects</a>
         <a href="about.html">About Me</a>
     </nav>
@@ -23,63 +21,80 @@
 
 <main class="container">
 
-    <!-- Intro Section -->
     <div class="card fade-slide">
         <section class="intro">
             <img src="pictures/saurav_headshot.png" alt="Saurav Raj Kunwar headshot" class="headshot">
 
             <div class="intro-text">
-                <h1>Nice to Meet You</h1>
+                <h1>Saurav Raj Kunwar</h1>
+
+                <p class="lead">
+                    I am Saurav Raj Kunwar, an applied economist and Postdoctoral Researcher at Texas Tech University.
+                </p>
 
                 <p>
-                    I'm Saurav Raj Kunwar, an applied economist working on agriculture, climate change,
-                    and environmental sustainability. My research uses economic tools to study farm
-                    productivity, policy design, and the value of environmental services from agricultural
-                    production.
+                    My work uses economic theory, applied econometrics, structural modeling, and mathematical
+                    programming to study policy design, productivity, risk, and environmental valuation. I am
+                    especially interested in how organizations and decision makers can evaluate trade-offs between
+                    economic performance, resource use, and long-run sustainability.
                 </p>
 
                 <p>
                     I completed my PhD in Agricultural and Applied Economics at the University of Illinois
-                    Urbana-Champaign. I also hold a Master of Science in Agricultural and Applied Economics
-                    from the University of Georgia and a Bachelor of Science in Agriculture from Tribhuvan
-                    University.
-                </p>
-
-                <p>
-                    I study the trade-offs between productivity and sustainability in agriculture, with a
-                    focus on how conservation practices, weather risk, and policy incentives affect farm
-                    performance. My work quantifies the benefits of sustainable practices on soil health,
-                    carbon storage, and biodiversity while considering their implications for productivity
-                    and profitability.
-                </p>
-
-                <p>
-                    Using production economics, I estimate shadow prices for environmental services and
-                    evaluate incentives that support productive, resilient, and sustainable agricultural
-                    systems.
+                    Urbana-Champaign. I also hold an MS in Agricultural and Applied Economics from the University
+                    of Georgia and a BS in Agriculture from Tribhuvan University.
                 </p>
             </div>
         </section>
     </div>
 
-    <!-- Publications -->
+    <section class="work-focus fade-slide">
+        <h2>What I Work On</h2>
+
+        <div class="focus-grid">
+            <div class="focus-item">
+                <h3>Applied Economic Analysis</h3>
+                <p>
+                    I translate complex production, resource, and environmental questions into empirical models
+                    that support clearer decisions.
+                </p>
+            </div>
+
+            <div class="focus-item">
+                <h3>Policy and Incentive Design</h3>
+                <p>
+                    I evaluate how policies and incentives shape productivity, conservation, adaptation, and
+                    environmental outcomes.
+                </p>
+            </div>
+
+            <div class="focus-item">
+                <h3>Data and Modeling</h3>
+                <p>
+                    I work with applied microeconometrics, structural modeling, simulation, big data, and
+                    reproducible workflows in R, Stata, Python, GAMS, and related tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="publications fade-slide">
         <h2>Recent Publications</h2>
 
         <p>
-            Kunwar, S. R., Chambers, R. G., Gentry, L., and Serra, T. (2025). 
+            Kunwar, S. R., Chambers, R. G., Gentry, L., and Serra, T. (2026).
             <a href="https://doi.org/10.1111/ajae.70005" target="_blank">
-                What are the Carbon Services from Cover-Crop Adoption Worth from Farmers’ Perspective?
+                What are the Carbon Services from Cover-Crop Adoption Worth from Farmers' Perspective?
             </a>
-            American Journal of Agricultural Economics.
+            American Journal of Agricultural Economics, 108(3), 901-925.
         </p>
 
         <p>
-            Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., and Wang, S. (2025). 
+            Chambers, R. G., Kunwar, S. R., Quiggin, J., Serra, T., and Wang, S. (2025).
             <a href="https://doi.org/10.1146/annurev-resource-121523-015001" target="_blank">
                 Estimating Production and Environmental Efficiency under Uncertainty
             </a>.
-            Annual Review of Resource Economics, 17.
+            Annual Review of Resource Economics, 17, 85-104.
         </p>
     </section>
 
@@ -87,18 +102,16 @@
 
 <footer>
     <p>
-        <a href="mailto:skunwar2@illinois.edu">skunwar2@illinois.edu</a> • 
-        (929) 332-1743 • 
+        <a href="mailto:saukunwa@ttu.edu">saukunwa@ttu.edu</a> |
         <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
     </p>
     <p>
-        © 2025 Saurav Raj Kunwar
+        &copy; 2026 Saurav Raj Kunwar
     </p>
 </footer>
 
 <script src="script.js"></script>
-
-<button id="darkModeToggle" class="dark-toggle floating-toggle">🌙</button>
+<button id="darkModeToggle" class="dark-toggle floating-toggle" aria-label="Toggle dark mode">Dark</button>
 
 </body>
 </html>

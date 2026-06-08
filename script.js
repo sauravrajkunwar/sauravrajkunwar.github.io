@@ -3,7 +3,7 @@ window.onload = () => {
     document.body.classList.add("loaded");
     revealOnScroll();
     applySavedTheme();
-    updateDarkModeIcon();
+    updateDarkModeLabel();
 };
 
 // Scroll reveal effect
@@ -24,30 +24,23 @@ function revealOnScroll() {
     elements.forEach((el) => observer.observe(el));
 }
 
-/* ----------------------------------------------------
-   DARK MODE TOGGLE SYSTEM
----------------------------------------------------- */
-
-// Toggle dark mode on click
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("darkModeToggle");
-    if (!toggle) return; // safety
+    if (!toggle) return;
 
     toggle.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
 
-        // Save choice
         if (document.body.classList.contains("dark-mode")) {
             localStorage.setItem("theme", "dark");
         } else {
             localStorage.setItem("theme", "light");
         }
 
-        updateDarkModeIcon();
+        updateDarkModeLabel();
     });
 });
 
-// Load saved theme
 function applySavedTheme() {
     const saved = localStorage.getItem("theme");
     if (saved === "dark") {
@@ -55,14 +48,9 @@ function applySavedTheme() {
     }
 }
 
-// Change icon based on mode
-function updateDarkModeIcon() {
+function updateDarkModeLabel() {
     const toggle = document.getElementById("darkModeToggle");
     if (!toggle) return;
 
-    if (document.body.classList.contains("dark-mode")) {
-        toggle.textContent = "☀️"; // light icon
-    } else {
-        toggle.textContent = "🌙"; // dark icon
-    }
+    toggle.textContent = document.body.classList.contains("dark-mode") ? "Light" : "Dark";
 }
